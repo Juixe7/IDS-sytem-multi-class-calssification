@@ -1,0 +1,14 @@
+{
+  "api_started": true,
+  "dashboard_started": true,
+  "overview_loaded": true,
+  "manual_prediction_rendered": true,
+  "csv_with_id_prediction_rendered": true,
+  "explain_view_loaded": true,
+  "screenshots": {
+    "overview": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\artifacts\\screenshots\\dashboard_overview.png",
+    "predict_form": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\artifacts\\screenshots\\dashboard_predict_form.png",
+    "prediction_result": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\artifacts\\screenshots\\dashboard_prediction_result.png"
+  },
+  "sample_csv": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\artifacts\\screenshots\\sample_input_with_id.csv"
+}

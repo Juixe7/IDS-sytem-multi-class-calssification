@@ -1,0 +1,6 @@
+{
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "pandas": "2.1.4",
+  "joblib": "1.4.2"
+}

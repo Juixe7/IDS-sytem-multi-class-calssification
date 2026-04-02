@@ -1,0 +1,35 @@
+# Python / Environment
+.venv/
+.venv-py311/
+.python311/
+.codex-tmp/
+.mplconfig/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project specific
+models/
+outputs/
+unsw/
+*.zip
+*.7z
+*.rar
+*.tar.gz
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,28 @@
+{
+  "repo_dataset_path": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\.codex-tmp\\IoT-Network-Intrusion-Detection-System-UNSW-NB15\\datasets\\multi_data.csv",
+  "rows": 81173,
+  "feature_count_with_leakage": 15,
+  "feature_count_without_leakage": 11,
+  "leakage_columns": [
+    "attack_cat_Analysis",
+    "attack_cat_DoS",
+    "attack_cat_Exploits",
+    "attack_cat_Normal"
+  ],
+  "with_leakage": {
+    "accuracy": 0.9727332457293035,
+    "macro_f1": 0.6865043320874125,
+    "weighted_f1": 0.9719912621539044
+  },
+  "without_attack_cat_dummies": {
+    "accuracy": 0.8920827858081471,
+    "macro_f1": 0.41488407268566496,
+    "weighted_f1": 0.8767473372087897
+  },
+  "accuracy_gap": 0.08065045992115638,
+  "macro_f1_gap": 0.2716202594017475,
+  "interpretation": {
+    "headline": "The repo benchmark is inflated by target-derived attack_cat dummy columns being present in the feature matrix.",
+    "production_note": "Those attack_cat_* columns are not available at inference time, so they must not be used in a deployable SaaS model."
+  }
+}

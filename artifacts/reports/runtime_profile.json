@@ -1,0 +1,10 @@
+{
+  "phase_2_data_ingestion": 3.0301264000008814,
+  "phase_3_5_preprocessing_and_feature_reduction": 5.088077400010661,
+  "phase_4_eda": 16.732362100010505,
+  "phase_6_7_training": 765.9637753999996,
+  "phase_8_evaluation": 94.74727320000238,
+  "phase_8a_final_model_calibration": 369.3527449000103,
+  "phase_8b_repo_benchmark_audit": 17.73813969999901,
+  "phase_9_shap": 29.325889300002018
+}

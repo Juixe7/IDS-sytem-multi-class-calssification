@@ -1,0 +1,267 @@
+{
+  "final_model": "lgbm",
+  "final_model_path": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\models\\final_model.pkl",
+  "mode": "train_all",
+  "selected_features": [
+    "num__dur",
+    "num__spkts",
+    "num__dpkts",
+    "num__rate",
+    "num__sttl",
+    "num__dttl",
+    "num__sload",
+    "num__dload",
+    "num__sinpkt",
+    "num__dinpkt",
+    "num__sjit",
+    "num__djit",
+    "num__swin",
+    "num__stcpb",
+    "num__dtcpb",
+    "num__dwin",
+    "num__tcprtt",
+    "num__synack",
+    "num__ackdat",
+    "num__smean",
+    "num__dmean",
+    "num__trans_depth",
+    "num__ct_srv_src",
+    "num__ct_state_ttl",
+    "num__ct_dst_ltm",
+    "num__ct_src_dport_ltm",
+    "num__ct_dst_sport_ltm",
+    "num__ct_dst_src_ltm",
+    "num__is_ftp_login",
+    "num__ct_flw_http_mthd",
+    "num__ct_src_ltm",
+    "num__ct_srv_dst",
+    "num__src_dst_ltm_ratio",
+    "num__ttl_diff",
+    "cat__proto_any",
+    "cat__proto_arp",
+    "cat__proto_emcon",
+    "cat__proto_gre",
+    "cat__proto_ipnip",
+    "cat__proto_irtp",
+    "cat__proto_iso-tp4",
+    "cat__proto_leaf-2",
+    "cat__proto_mux",
+    "cat__proto_netblt",
+    "cat__proto_nvp",
+    "cat__proto_ospf",
+    "cat__proto_pup",
+    "cat__proto_rdp",
+    "cat__proto_rsvp",
+    "cat__proto_sctp",
+    "cat__proto_secure-vmtp",
+    "cat__proto_snp",
+    "cat__proto_st2",
+    "cat__proto_tcp",
+    "cat__proto_trunk-1",
+    "cat__proto_trunk-2",
+    "cat__proto_udp",
+    "cat__proto_unas",
+    "cat__proto_vmtp",
+    "cat__proto_xnet",
+    "cat__service_-",
+    "cat__service_dhcp",
+    "cat__service_dns",
+    "cat__service_ftp",
+    "cat__service_ftp-data",
+    "cat__service_http",
+    "cat__service_pop3",
+    "cat__service_smtp",
+    "cat__service_snmp",
+    "cat__service_ssh",
+    "cat__service_ssl",
+    "cat__state_CON",
+    "cat__state_FIN",
+    "cat__state_INT",
+    "cat__state_REQ"
+  ],
+  "class_names": [
+    "analysis",
+    "backdoor",
+    "dos",
+    "exploits",
+    "fuzzers",
+    "generic",
+    "normal",
+    "reconnaissance",
+    "shellcode",
+    "worms"
+  ],
+  "artifacts_root": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\artifacts",
+  "models_root": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\models",
+  "outputs_root": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\outputs",
+  "manifest_path": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\artifacts\\reports\\final_model_manifest.json",
+  "repo_audit_report_path": "C:\\Users\\ramil\\OneDrive\\Desktop\\New folder\\artifacts\\reports\\repo_benchmark_audit.md",
+  "interaction_feature_names": [
+    "sload_dload_ratio",
+    "src_dst_ltm_ratio",
+    "ttl_diff"
+  ],
+  "class_thresholds": {
+    "fuzzers": 0.3,
+    "backdoor": 0.15,
+    "analysis": 0.2,
+    "worms": 0.15
+  },
+  "threshold_tuning": {
+    "validation_macro_f1": 0.5844534651924722,
+    "thresholds_by_index": {
+      "4": 0.3,
+      "1": 0.15,
+      "0": 0.2,
+      "9": 0.15
+    }
+  },
+  "calibrated_final_model_metrics": {
+    "accuracy": 0.7472712084648228,
+    "macro_f1": 0.526886301371071,
+    "weighted_f1": 0.7124637748877215,
+    "classification_report": {
+      "analysis": {
+        "precision": 0.16008462623413258,
+        "recall": 0.2848180677540778,
+        "f1-score": 0.20496613995485327,
+        "support": 1594.0
+      },
+      "backdoor": {
+        "precision": 0.23376623376623376,
+        "recall": 0.21107491856677524,
+        "f1-score": 0.2218418349880178,
+        "support": 1535.0
+      },
+      "dos": {
+        "precision": 0.287270463741052,
+        "recall": 0.24251182343667893,
+        "f1-score": 0.26300042741131213,
+        "support": 3806.0
+      },
+      "exploits": {
+        "precision": 0.8250972258231787,
+        "recall": 0.80185446482564,
+        "f1-score": 0.8133098213601165,
+        "support": 19844.0
+      },
+      "fuzzers": {
+        "precision": 0.7075710667041937,
+        "recall": 0.1556656346749226,
+        "f1-score": 0.2551895650408567,
+        "support": 16150.0
+      },
+      "generic": {
+        "precision": 0.8617433414043584,
+        "recall": 0.8512317627361875,
+        "f1-score": 0.8564553002045482,
+        "support": 4181.0
+      },
+      "normal": {
+        "precision": 0.7751636380281045,
+        "recall": 0.9790903835035653,
+        "f1-score": 0.8652740758402807,
+        "support": 51890.0
+      },
+      "reconnaissance": {
+        "precision": 0.7901792219146146,
+        "recall": 0.7209518745014624,
+        "f1-score": 0.753979840111227,
+        "support": 7522.0
+      },
+      "shellcode": {
+        "precision": 0.69433465085639,
+        "recall": 0.4830430797433547,
+        "f1-score": 0.5697297297297297,
+        "support": 1091.0
+      },
+      "worms": {
+        "precision": 0.40229885057471265,
+        "recall": 0.5511811023622047,
+        "f1-score": 0.46511627906976744,
+        "support": 127.0
+      },
+      "accuracy": 0.7472712084648228,
+      "macro avg": {
+        "precision": 0.5737509319046971,
+        "recall": 0.5281423112104868,
+        "f1-score": 0.526886301371071,
+        "support": 107740.0
+      },
+      "weighted avg": {
+        "precision": 0.7433301353034502,
+        "recall": 0.7472712084648228,
+        "f1-score": 0.7124637748877215,
+        "support": 107740.0
+      }
+    }
+  },
+  "sample_prediction": [
+    {
+      "predicted_label": "normal",
+      "predicted_index": 6,
+      "confidence": 0.6890236766419419,
+      "probabilities": {
+        "analysis": 0.0,
+        "backdoor": 0.0,
+        "dos": 0.16742413229013353,
+        "exploits": 0.09529287067677011,
+        "fuzzers": 0.029550924652746762,
+        "generic": 0.014713126784645003,
+        "normal": 0.6890236766419419,
+        "reconnaissance": 0.0005970031724863572,
+        "shellcode": 0.0033982657812762205,
+        "worms": 0.0
+      }
+    }
+  ],
+  "sample_explanation": [
+    {
+      "prediction": {
+        "predicted_label": "normal",
+        "predicted_index": 6,
+        "confidence": 0.6890236766419419,
+        "probabilities": {
+          "analysis": 0.0,
+          "backdoor": 0.0,
+          "dos": 0.16742413229013353,
+          "exploits": 0.09529287067677011,
+          "fuzzers": 0.029550924652746762,
+          "generic": 0.014713126784645003,
+          "normal": 0.6890236766419419,
+          "reconnaissance": 0.0005970031724863572,
+          "shellcode": 0.0033982657812762205,
+          "worms": 0.0
+        }
+      },
+      "expected_value": -5.1350859846287795,
+      "top_features": [
+        {
+          "feature": "num__ct_dst_src_ltm",
+          "shap_value": 2.589080333709717,
+          "feature_value": 2.0
+        },
+        {
+          "feature": "num__ct_dst_sport_ltm",
+          "shap_value": 1.4316017627716064,
+          "feature_value": 1.0
+        },
+        {
+          "feature": "num__sttl",
+          "shap_value": -1.3562642335891724,
+          "feature_value": 254.0
+        },
+        {
+          "feature": "cat__proto_udp",
+          "shap_value": 0.8029128313064575,
+          "feature_value": 1.0
+        },
+        {
+          "feature": "num__ct_dst_ltm",
+          "shap_value": 0.6534320712089539,
+          "feature_value": 1.0
+        }
+      ]
+    }
+  ]
+}
